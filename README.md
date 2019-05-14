@@ -1,2 +1,2 @@
-# salad_chef_simulation
+# salad chef simulation
 Salad Chef Simulation
