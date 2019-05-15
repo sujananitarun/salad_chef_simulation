@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - vegetables a
+  - vegetables b
+  - vegetables c
+  - vegetables d
+  - vegetables e
+  - vegetables f
   layers:
   - Default
   - TransparentFX
@@ -38,15 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 984272705
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player 1
-    uniqueID: 682114291
-    locked: 0
-  - name: Player 2
-    uniqueID: 1361843451
+  - name: foreground
+    uniqueID: 3880610175
     locked: 0
