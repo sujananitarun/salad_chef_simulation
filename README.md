@@ -1,2 +1,2 @@
-# Salad Chef Simulation
+# Salad Chef Simulator
 

@@ -237,9 +237,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\letter_mats.cs" />
-    <Compile Include="Assets\Scripts\player1.cs" />
-    <Compile Include="Assets\Scripts\player2.cs" />
+    <Compile Include="Assets\Scripts\ChoppingBoard.cs" />
+    <Compile Include="Assets\Scripts\ChoppingIndicator.cs" />
+    <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\Customer.cs" />
+    <Compile Include="Assets\Scripts\Dustbin.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Interfaces.cs" />
+    <Compile Include="Assets\Scripts\Layers.cs" />
+    <Compile Include="Assets\Scripts\Plate.cs" />
+    <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\T_Player.cs" />
+    <Compile Include="Assets\Scripts\Tags.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Vegetable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

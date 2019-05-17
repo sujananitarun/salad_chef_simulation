@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - vegetables a
-  - vegetables b
-  - vegetables c
-  - vegetables d
-  - vegetables e
-  - vegetables f
+  - ServingCounter
+  - Wall
+  - Vegetable
+  - ChoppingBoard
+  - PlayerManager
+  - Plate
   layers:
   - Default
   - TransparentFX
@@ -19,8 +19,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - Interactable
   - 
   - 
   - 
@@ -46,7 +46,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: foreground
-    uniqueID: 3880610175
     locked: 0
