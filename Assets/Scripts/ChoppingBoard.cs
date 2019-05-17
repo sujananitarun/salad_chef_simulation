@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ChoppingBoard : MonoBehaviour, IInteractable {
 
@@ -10,6 +11,8 @@ public class ChoppingBoard : MonoBehaviour, IInteractable {
 	private bool beingUsed = false;
 	private float choppingFrameCounter = 0;
 	private T_Player player;
+    public AudioClip MusicClip;
+    public AudioSource MusicSource;
 
 	private void Awake() {
 		vegetableUI = GetComponentInChildren<TextMesh>();
@@ -43,6 +46,8 @@ public class ChoppingBoard : MonoBehaviour, IInteractable {
 					vegetableUI.text = vegetableName;
 					this.player = player;
 					SetChopping(true);
+                    MusicSource.clip = MusicClip;
+                    MusicSource.Play();
 				}
 				else{
 					vegetableName = null;

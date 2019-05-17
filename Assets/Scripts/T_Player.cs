@@ -15,6 +15,7 @@ public class T_Player : MonoBehaviour {
 
 	private PlayerManager playerManager;
 
+
 	private Queue<string> vegetables = new Queue<string>();
 	private List<string> choppedVegetables = new List<string>();
 
@@ -42,6 +43,7 @@ public class T_Player : MonoBehaviour {
 
 	private Vector2 oldPosition;
 	private SpriteRenderer spriteRenderer;
+    
 
 	private void Awake(){
 		body = GetComponent<Rigidbody2D>();
@@ -132,7 +134,8 @@ public class T_Player : MonoBehaviour {
 
 		tempVegetableUIText = "";
 		foreach(string vegetable in vegetables){
-			tempVegetableUIText += vegetable + ", ";			
+			tempVegetableUIText += vegetable + ", ";
+            
 		}
 		
 		if(tempVegetableUIText != "") vegetablesUI.text = tempVegetableUIText;

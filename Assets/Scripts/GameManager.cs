@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 	public PlayerManager playerManager;
     public Spawner spawner;
+    public AudioSource musicSource;
+    public AudioClip musicClip;
 
-	private UIManager uIManager;
+    private UIManager uIManager;
 
 	private List<Plate> plates = new List<Plate>();
 	private List<ChoppingBoard> choppingBoards = new List<ChoppingBoard>();
@@ -49,11 +51,14 @@ public class GameManager : MonoBehaviour {
 	private void StopGame(){
 		playerManager.StopPlayers(true);
 		spawner.ToSpawn = false;
+        musicSource.Stop();
 	}
 
 	public void StartGame(){
 		ResetGame();
-		playerManager.StopPlayers(false);
+        musicSource.clip = musicClip;
+        musicSource.Play();
+        playerManager.StopPlayers(false);
 		spawner.ToSpawn = true;
 	}
 }
