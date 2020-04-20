@@ -25,4 +25,5 @@
 * Will make VR version of the game(Using google's GvrMain).
 * Will make the AR version of the game(Marked AR)(Using Vuforia).
 
-
+Hosted on :
+http://salad-chef.herokuapp.com/
